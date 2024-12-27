@@ -1,0 +1,63 @@
+/* General container styling */
+.restaurants-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #555;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Restaurant list grid */
+.restaurants-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* Individual restaurant thumbnail */
+.restaurant-thumbnail {
+  width: 320px; /* Increased the thumbnail width */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.restaurant-thumbnail:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.restaurant-thumbnail img {
+  width: 100%;
+  height: 220px; /* Increased the height for larger images */
+  object-fit: cover;
+}
+
+/* Restaurant name styling */
+.restaurant-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+  padding: 10px 0;
+  margin: 0;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
